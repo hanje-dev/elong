@@ -8,6 +8,7 @@ version = "0.8.1"
 
 [lib]
 bench = false
+proc-macro = true
 
 [dependencies]
 darling = "0.13"

@@ -1,0 +1,25 @@
+[package]
+
+authors = ["hanje.dev@gmail.com"]
+description = "Macros for ast nodes."
+edition = "2021"
+license = "Apache-2.0"
+name = "ast_atoms"
+version = "0.2.13"
+
+[lib]
+bench = false
+
+[features]
+rkyv-impl = ["rkyv", "bytecheck"]
+
+[dependencies]
+bytecheck = { version = "0.6.8", optional = true }
+once_cell = "1"
+rkyv = { version = "0.7.39", optional = true }
+rustc-hash = "1.1.0"
+serde = "1"
+string_cache = "0.8.4"
+
+[build-dependencies]
+string_cache_codegen = "0.5.2"

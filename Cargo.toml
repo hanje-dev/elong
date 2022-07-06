@@ -1,6 +1,7 @@
 [workspace]
 members = [
   "crates/ast_node",
+  "crates/swc_atoms",
 ]
 
 [profile.release]
